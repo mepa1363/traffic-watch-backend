@@ -5,7 +5,7 @@ const get = (req, res) => {
   axios
     .post(
       "http://34.223.100.198:5000/predict",
-      { cameraId: cameraId, steps: 96 },
+      { cameraId: cameraId, steps: 48 },
       { headers: { "Content-Type": "application/json" } }
     )
     .then(response => {
